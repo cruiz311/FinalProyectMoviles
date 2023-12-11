@@ -7,7 +7,6 @@ public class PlayerMoveController : MonoBehaviour {
 
 	// PUBLIC
 	public SimpleTouchController leftController;
-	public SimpleTouchController rightController;
 	public Transform headTrans;
 	public float speedMovements = 5f;
 	public float speedContinuousLook = 100f;
@@ -20,7 +19,6 @@ public class PlayerMoveController : MonoBehaviour {
 	void Awake()
 	{
 		_rigidbody = GetComponent<Rigidbody>();
-		rightController.TouchEvent += RightController_TouchEvent;
 	}
 
 	public bool ContinuousRightController
@@ -41,13 +39,7 @@ public class PlayerMoveController : MonoBehaviour {
 		// move
 		_rigidbody.MovePosition(transform.position + (transform.forward * leftController.GetTouchPosition.y * Time.deltaTime * speedMovements) +
 			(transform.right * leftController.GetTouchPosition.x * Time.deltaTime * speedMovements) );
-
-		if(continuousRightController)
-		{
-			UpdateAim(rightController.GetTouchPosition);
-		}
 	}
-
 	void UpdateAim(Vector2 value)
 	{
 		if(headTrans != null)
@@ -73,11 +65,6 @@ public class PlayerMoveController : MonoBehaviour {
 
 			_rigidbody.MoveRotation(rot);
 		}
-	}
-
-	void OnDestroy()
-	{
-		rightController.TouchEvent -= RightController_TouchEvent;
 	}
 
 }
