@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
     public int vida;
     public int maxVida;
     public int damage;
-
     public Enemys target;
 
     public List<Enemys> listEnemigos = new List<Enemys>();

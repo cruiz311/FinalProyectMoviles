@@ -1,41 +1,48 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class EnemyObjectPool : MonoBehaviour
 {
     public GameObject enemyPrefab; // Prefab del enemigo
-    public int poolSize = 10; // Tamaño del pool
-    private List<GameObject> enemyPool = new List<GameObject>();
+    public int poolSize = 10; // Tamaño inicial del pool
+    public List<GameObject> enemyPool; // Lista para almacenar los enemigos disponibles
 
     void Start()
     {
-        InitializePool();
-    }
+        enemyPool = new List<GameObject>();
 
-    void InitializePool()
-    {
+        // Crear y almacenar enemigos iniciales en el pool
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject enemy = Instantiate(enemyPrefab, Vector3.zero, Quaternion.identity);
-            enemy.SetActive(false); // Desactivar el enemigo al instanciarlo
-            enemyPool.Add(enemy); // Agregar el enemigo al pool
+            GameObject enemy = Instantiate(enemyPrefab, transform);
+            enemy.SetActive(false); // Desactivar el enemigo inicialmente
+            enemyPool.Add(enemy);
         }
     }
 
+    // Método para obtener un enemigo del pool
     public GameObject GetEnemyFromPool()
     {
-        for (int i = 0; i < enemyPool.Count; i++)
+        foreach (GameObject enemy in enemyPool)
         {
-            if (!enemyPool[i].activeInHierarchy) // Buscar un enemigo inactivo en el pool
+            if (!enemy.activeInHierarchy)
             {
-                return enemyPool[i]; // Devolver el enemigo inactivo
+                enemy.SetActive(true); // Activar el enemigo encontrado
+                return enemy;
             }
         }
 
-        // Si todos los enemigos están activos, aumentar el tamaño del pool
-        GameObject newEnemy = Instantiate(enemyPrefab, Vector3.zero, Quaternion.identity);
-        newEnemy.SetActive(false);
+        // Si no hay enemigos inactivos en el pool, crear uno nuevo y agregarlo al pool
+        GameObject newEnemy = Instantiate(enemyPrefab, transform);
+        newEnemy.SetActive(true);
         enemyPool.Add(newEnemy);
+
         return newEnemy;
+    }
+
+    // Método para desactivar un enemigo y devolverlo al pool
+    public void ReturnEnemyToPool(GameObject enemy)
+    {
+        enemy.SetActive(false); // Desactivar el enemigo
     }
 }
