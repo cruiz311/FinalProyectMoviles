@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "613398168306",
+    "firebase_url": "https://proyectofinalmoviles-7210e-default-rtdb.firebaseio.com",
+    "project_id": "proyectofinalmoviles-7210e",
+    "storage_bucket": "proyectofinalmoviles-7210e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613398168306:android:cb36135e1b48dc4089466b",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ProyectoFinalMoviles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaf3IlwBHu6aX6DHWuk2CAgUZKMrAZwbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
