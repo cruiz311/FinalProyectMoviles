@@ -6,6 +6,7 @@ using Firebase;
 using System.Threading.Tasks;
 using UnityEngine.Events;
 using TMPro;
+using UnityEngine.UI;
 
 public class Authentification : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Authentification : MonoBehaviour
     [SerializeField] private string password;
     [SerializeField] private string Nombre;
 
-    
+    public List< TextMeshProUGUI> text_mensaje;
 
     private FirebaseAuth _authReference;
 
@@ -105,6 +106,14 @@ public class Authentification : MonoBehaviour
     public void set_nombre(string nombre_)
     {
         Nombre = nombre_;
+    }
+    public void Mensaje(string mensaje_)
+    {
+        foreach (TextMeshProUGUI item in text_mensaje)
+        {
+            item.text = mensaje_;
+        }
+        
     }
     private void LogOut()
     {
