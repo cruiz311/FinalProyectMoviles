@@ -22,7 +22,10 @@ public class Authentification : MonoBehaviour
     public UnityEvent OnRegisterSuccesful = new UnityEvent();
     public UnityEvent OnLogInSuccesful = new UnityEvent();
 
-    
+    public UnityEvent OnRegisterFail = new UnityEvent();
+    public UnityEvent OnLogInFail = new UnityEvent();
+
+
     private void Awake()
     {
         _authReference = FirebaseAuth.GetAuth(FirebaseApp.DefaultInstance);
@@ -64,6 +67,7 @@ public class Authentification : MonoBehaviour
         {
             
             Debug.LogWarning($"Failed to register task with {registerTask.Exception}");
+            OnRegisterFail.Invoke();
         }
         else
         {
@@ -84,6 +88,7 @@ public class Authentification : MonoBehaviour
         if (loginTask.Exception != null)
         {
             Debug.LogWarning($"Login failed with {loginTask.Exception}");
+            OnLogInFail.Invoke();
         }
         else
         {

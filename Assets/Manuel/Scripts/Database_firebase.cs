@@ -6,25 +6,27 @@ using System;
 
 public class Database_firebase : MonoBehaviour
 {
+    public static Database_firebase instance;
     private DatabaseReference databaseReference;
-    private string userID;
+    
     public Player_data player_Data;
     // Start is called before the first frame update
     private void Awake()
     {
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
         databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
     }
-    void Start()
-    {
-       
 
-    }
+    //INSTRUCCIONES
+    //--PARA ACCEDER AL NIVEL DEL USUARIO Get_Nivel
+    // CODIGO: Database_firebase.instance.Get_Nivel(funcion con parametro int que recibira el nivel);
 
-    // Update is called once per frame
-    void Update()
-    {
+    //--PARA ENVIAR EL NIVEL A DATABASE FIREBASE
+    //CODIGO:  Database_firebase.instance.Set_Nivel(valor);
 
-    }
+    //Y LO MISMO PARA NOMBRE
+
     public void Create_user()
     {
         //databaseReference.Child("Users").Child(userID).SetValueAsync(userID);
@@ -49,6 +51,19 @@ public class Database_firebase : MonoBehaviour
 
         }
     }
+    public IEnumerator Get_Nombre(Action<string> onCallBack)
+    {
+        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").GetValueAsync();
+
+        yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
+
+        if (userNameData != null)
+        {
+            DataSnapshot snapshot = userNameData.Result;
+            //player_Data.Nombre = snapshot.Value.ToString();
+            onCallBack.Invoke(snapshot.Value.ToString());
+        }
+    }
     private IEnumerator Get_Nivel()
     {
         var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").GetValueAsync();
@@ -62,12 +77,28 @@ public class Database_firebase : MonoBehaviour
 
         }
     }
+    public IEnumerator Get_Nivel(Action<int> onCallBack)
+    {
+        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").GetValueAsync();
+
+        yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
+
+        if (userNameData != null)
+        {
+            DataSnapshot snapshot = userNameData.Result;
+            //player_Data.Nivel = int.Parse(snapshot.Value.ToString());
+            onCallBack.Invoke(int.Parse(snapshot.Value.ToString()));
+
+        }
+    }
     public void Set_Nombre(string nombre_)
     {
+        player_Data.Nombre = nombre_;
         databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").SetValueAsync(nombre_);
     }
     public void Set_Nivel(int nivel_)
     {
+        player_Data.Nivel = nivel_;
         databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").SetValueAsync(nivel_);
     }
 
