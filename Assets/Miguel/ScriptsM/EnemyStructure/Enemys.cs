@@ -11,6 +11,11 @@ public class Enemys : MonoBehaviour
     public EnemyData EnemyData; // Referencia al Scriptable Object de estadísticas de enemigo
     protected Transform jugadorPos;
 
+
+    private void Awake()
+    {
+        EnemyData.Awake();
+    }
     private void Start()
     {
         jugadorPos = GameObject.FindGameObjectWithTag("Player").transform;

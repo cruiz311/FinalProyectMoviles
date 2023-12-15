@@ -8,11 +8,19 @@ public class EnemyData : ScriptableObject
     public int damage;
     public int velocidad;
     public GameObject enemyPrefab; // Referencia al prefab del enemigo
+    public RuntimeAnimatorController anim;
 
+    public void Awake()
+    {
+        InstantiateEnemy(enemyPrefab.transform.position,Quaternion.identity);
+    }
     // Otras propiedades que puedas necesitar para tu enemigo
 
     public GameObject InstantiateEnemy(Vector3 position, Quaternion rotation)
     {
-        return Instantiate(enemyPrefab, position, rotation);
+        GameObject newEnemy = Instantiate(enemyPrefab, position, rotation);
+        Animator animator = newEnemy.AddComponent<Animator>();
+        animator.runtimeAnimatorController = anim;
+        return newEnemy;
     }
 }

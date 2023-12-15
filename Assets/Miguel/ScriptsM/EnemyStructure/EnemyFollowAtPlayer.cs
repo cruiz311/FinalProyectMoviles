@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyFollowAtPlayer : Enemys
 {
     public float distanciaDeAtaque = 5.0f; // La distancia a la que el enemigo atacará
-
     void Update()
     {
         if (jugadorPos != null)
