@@ -8,12 +8,19 @@ public class Player : MonoBehaviour
     public int damage;
     public Enemys target;
 
+    public GameObject cuerpo;
+
     public List<Enemys> listEnemigos = new List<Enemys>();
 
     void Update()
     {
         UpdateEnemyList();
-        transform.LookAt(target.transform);
+        if(target != null)
+        {
+            Vector3 direction = target.transform.position - cuerpo.transform.position;
+            direction.y = 0;
+            cuerpo.transform.rotation = Quaternion.Slerp(cuerpo.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * 5f);
+        }
     }
 
     void UpdateEnemyList()
@@ -44,6 +51,21 @@ public class Player : MonoBehaviour
         else
         {
             target = null; // No hay enemigos en la lista, el objetivo es nulo
+        }
+    } 
+
+    public void lookThis(Transform posicion)
+    {
+        if(posicion != null)
+        {
+            Vector3 direction = posicion.position - transform.position;
+            direction.y = 0;
+
+            if(direction != Vector3.zero)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(direction);
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5.0f);
+            }
         }
     }
 }
