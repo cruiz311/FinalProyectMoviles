@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,19 +8,22 @@ public class Player : MonoBehaviour
     public int maxVida;
     public int damage;
     public Enemys target;
-
     public GameObject cuerpo;
-
+    public GameObject brazo;
+    public GameObject bala;
     public List<Enemys> listEnemigos = new List<Enemys>();
+    private bool isShooting = false;
 
     void Update()
     {
         UpdateEnemyList();
-        if(target != null)
+        if (target != null)
         {
-            Vector3 direction = target.transform.position - cuerpo.transform.position;
-            direction.y = 0;
-            cuerpo.transform.rotation = Quaternion.Slerp(cuerpo.transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * 5f);
+            lookThis(target.transform);
+            if (!isShooting) // Verificar si no se está disparando actualmente
+            {
+                StartCoroutine(shot());
+            }
         }
     }
 
@@ -52,20 +56,44 @@ public class Player : MonoBehaviour
         {
             target = null; // No hay enemigos en la lista, el objetivo es nulo
         }
-    } 
+    }
 
     public void lookThis(Transform posicion)
     {
-        if(posicion != null)
+        if (posicion != null)
         {
             Vector3 direction = posicion.position - transform.position;
             direction.y = 0;
 
-            if(direction != Vector3.zero)
+            if (direction != Vector3.zero)
             {
                 Quaternion lookRotation = Quaternion.LookRotation(direction);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5.0f);
             }
         }
     }
+
+
+
+    public IEnumerator shot()
+    {
+        isShooting = true; // Marcar que la corutina de disparo está en curso
+
+        while (target != null)
+        {
+            GameObject newBullet = Instantiate(bala, brazo.transform.position, Quaternion.identity);
+            Rigidbody bulletRigidbody = newBullet.GetComponent<Rigidbody>();
+
+            if (bulletRigidbody != null)
+            {
+                bulletRigidbody.velocity = cuerpo.transform.forward * 20f; // Dirección y velocidad de la bala
+            }
+
+            yield return new WaitForSeconds(2f);
+        }
+
+        isShooting = false; // La corutina de disparo ha finalizado
+    }
+
+
 }

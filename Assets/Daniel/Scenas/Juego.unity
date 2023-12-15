@@ -288,6 +288,8 @@ MonoBehaviour:
   damage: 0
   target: {fileID: 0}
   cuerpo: {fileID: 1549812307}
+  brazo: {fileID: 1130276548}
+  bala: {fileID: 8843146608046558200, guid: 5de5bc70aeaad6d48ae3982b9b5edca3, type: 3}
   listEnemigos: []
 --- !u!1 &241674196
 GameObject:
@@ -546,7 +548,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.5, y: 1, z: 43.1}
+  m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 389419263}
@@ -661,7 +663,7 @@ Transform:
   m_GameObject: {fileID: 901631059}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.35, z: 8.06}
+  m_LocalPosition: {x: 0, y: 1, z: 8.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
