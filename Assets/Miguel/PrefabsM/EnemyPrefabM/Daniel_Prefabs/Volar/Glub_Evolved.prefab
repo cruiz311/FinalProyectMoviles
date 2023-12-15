@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734703308200711305}
+  - component: {fileID: 4195515766780989894}
   m_Layer: 0
   m_Name: Glub_Evolved
   m_TagString: Untagged
@@ -33,6 +34,23 @@ Transform:
   - {fileID: 9002502422334740689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &4195515766780989894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106362806691679795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3555098d715eb41b719433fa53e0da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 0
+  maxVida: 0
+  damage: 0
+  velocidad: 0
+  Target: 0
 --- !u!1 &324701730501541098
 GameObject:
   m_ObjectHideFlags: 0
