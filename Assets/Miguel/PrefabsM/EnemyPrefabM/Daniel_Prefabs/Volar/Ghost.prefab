@@ -615,7 +615,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3212511915529577885}
-  - component: {fileID: -5762337717010087088}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -640,23 +639,6 @@ Transform:
   - {fileID: 8048619012096793226}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &-5762337717010087088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2872999958589079335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3555098d715eb41b719433fa53e0da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: 0
-  maxVida: 0
-  damage: 0
-  velocidad: 0
-  Target: 0
 --- !u!1 &2899226304604298818
 GameObject:
   m_ObjectHideFlags: 0

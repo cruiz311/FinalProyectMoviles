@@ -423,7 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7543810242982395936}
-  - component: {fileID: -3489270624354370872}
+  - component: {fileID: 3479014749637093917}
   m_Layer: 0
   m_Name: Alpaking
   m_TagString: Untagged
@@ -448,7 +448,7 @@ Transform:
   - {fileID: 2636869876814938198}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &-3489270624354370872
+--- !u!114 &3479014749637093917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

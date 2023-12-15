@@ -427,7 +427,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641850588746559314}
-  - component: {fileID: -4591094103264693483}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Enemy
@@ -453,20 +452,6 @@ Transform:
   - {fileID: 5709958950316898254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-4591094103264693483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126498118994327016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c110d8977d99b49a1c3ee4f9309109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyData: {fileID: 0}
-  distanciaDeAtaque: 1.5
 --- !u!1 &2251748149597494996
 GameObject:
   m_ObjectHideFlags: 0
