@@ -32,74 +32,119 @@ public class Database_firebase : MonoBehaviour
         //databaseReference.Child("Users").Child(userID).SetValueAsync(userID);
         Set_Nombre(player_Data.Nombre);
         Set_Nivel(0);
+        Set_Puntos_experiencia(0);
+        Set_Puntos_maximo_experiencia(0);
+        Set_Energia(0);
+        Set_Energia_maxima(0);
+        Set_Puntos_magia(0);
     }
     public void Get_player_data()
     {
-        StartCoroutine(Get_Nombre());
-        StartCoroutine(Get_Nivel());
+        Get_Nombre(player_Data.Set_Nombre);
+        Get_Nivel(player_Data.Set_Nivel);
+        Get_Puntos_experiencia(player_Data.Set_Puntos_experiencia);
+        Get_Puntos_maximo_experiencia(player_Data.Set_Puntos_maximo_experiencia);
+        Get_Energia(player_Data.Set_Energia);
+        Get_Energia_maxima(player_Data.Set_Energia_maxima);
+        Get_Puntos_magia(player_Data.Set_Puntos_magia);
     }
-    private IEnumerator Get_Nombre()
+    
+   
+    
+    public IEnumerator Get_Variable_string_de_Users(string nombre_variable,Action<string> onCallBack)
     {
-        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").GetValueAsync();
+        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child(nombre_variable).GetValueAsync();
 
         yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
 
         if (userNameData != null)
         {
             DataSnapshot snapshot = userNameData.Result;
-            player_Data.Nombre = snapshot.Value.ToString();
-
-        }
-    }
-    public IEnumerator Get_Nombre(Action<string> onCallBack)
-    {
-        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").GetValueAsync();
-
-        yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
-
-        if (userNameData != null)
-        {
-            DataSnapshot snapshot = userNameData.Result;
-            //player_Data.Nombre = snapshot.Value.ToString();
+            
             onCallBack.Invoke(snapshot.Value.ToString());
+
         }
     }
-    private IEnumerator Get_Nivel()
+    public IEnumerator Get_Variable_int_de_Users(string nombre_variable, Action<int> onCallBack)
     {
-        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").GetValueAsync();
+        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child(nombre_variable).GetValueAsync();
 
         yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
 
         if (userNameData != null)
         {
             DataSnapshot snapshot = userNameData.Result;
-            player_Data.Nivel = int.Parse(snapshot.Value.ToString());
-
-        }
-    }
-    public IEnumerator Get_Nivel(Action<int> onCallBack)
-    {
-        var userNameData = databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").GetValueAsync();
-
-        yield return new WaitUntil(predicate: () => userNameData.IsCompleted);
-
-        if (userNameData != null)
-        {
-            DataSnapshot snapshot = userNameData.Result;
-            //player_Data.Nivel = int.Parse(snapshot.Value.ToString());
+            
             onCallBack.Invoke(int.Parse(snapshot.Value.ToString()));
 
         }
     }
-    public void Set_Nombre(string nombre_)
+    public void Get_Nombre(Action<string> onCallBack)
     {
-        player_Data.Nombre = nombre_;
-        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").SetValueAsync(nombre_);
+        StartCoroutine(Get_Variable_string_de_Users("Nombre", onCallBack));
+
     }
-    public void Set_Nivel(int nivel_)
+    public void Get_Nivel(Action<int> onCallBack)
     {
-        player_Data.Nivel = nivel_;
-        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").SetValueAsync(nivel_);
+        StartCoroutine(Get_Variable_int_de_Users("Nivel", onCallBack));
+    }
+    public void Get_Puntos_experiencia(Action<int> onCallBack)
+    {
+        StartCoroutine(Get_Variable_int_de_Users("Puntos_experiencia", onCallBack));
+    }
+    public void Get_Puntos_maximo_experiencia(Action<int> onCallBack)
+    {
+        StartCoroutine(Get_Variable_int_de_Users("Puntos_maximo_experiencia", onCallBack));
+    }
+    public void Get_Energia(Action<int> onCallBack)
+    {
+        StartCoroutine(Get_Variable_int_de_Users("Energia", onCallBack));
+    }
+    public void Get_Energia_maxima(Action<int> onCallBack)
+    {
+        StartCoroutine(Get_Variable_int_de_Users("Energia_maxima", onCallBack));
+    }
+    public void Get_Puntos_magia(Action<int> onCallBack)
+    {
+        StartCoroutine(Get_Variable_int_de_Users("Puntos_magia", onCallBack));
+    }
+
+
+
+    public void Set_Nombre(string Nombre)
+    {
+        player_Data.Nombre = Nombre;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nombre").SetValueAsync(Nombre);
+    }
+    public void Set_Nivel(int Nivel)
+    {
+        player_Data.Nivel = Nivel;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Nivel").SetValueAsync(Nivel);
+    }
+    public void Set_Puntos_experiencia(int Puntos_experiencia)
+    {
+        player_Data.Puntos_experiencia = Puntos_experiencia;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Puntos_experiencia").SetValueAsync(Puntos_experiencia);
+    }
+    public void Set_Puntos_maximo_experiencia(int Puntos_maximo_experiencia)
+    {
+        player_Data.Puntos_experiencia = Puntos_maximo_experiencia;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Puntos_maximo_experiencia").SetValueAsync(Puntos_maximo_experiencia);
+    }
+    public void Set_Energia(int Energia)
+    {
+        player_Data.Energia = Energia;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Energia").SetValueAsync(Energia);
+    }
+    public void Set_Energia_maxima(int Energia_maxima)
+    {
+        player_Data.Energia_maxima = Energia_maxima;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Energia_maxima").SetValueAsync(Energia_maxima);
+    }
+    public void Set_Puntos_magia(int Puntos_magia)
+    {
+        player_Data.Puntos_magia = Puntos_magia;
+        databaseReference.Child("Users").Child(player_Data.Id_firebase).Child("Puntos_magia").SetValueAsync(Puntos_magia);
     }
 
 
