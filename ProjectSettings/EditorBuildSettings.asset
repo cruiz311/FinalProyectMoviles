@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Daniel/Scenas/Inicio.unity
+    path: Assets/Scenas/Inicio.unity
     guid: 46e9839b072abae4bb5c4dcf20456079
   - enabled: 1
-    path: Assets/Daniel/Scenas/Juego.unity
+    path: Assets/Scenas/Juego.unity
     guid: 7276d4eb48b56984fb2bf2570d304f20
   m_configObjects: {}
