@@ -6,11 +6,10 @@ public class meta : MonoBehaviour
 {
     public List<Enemys> listEnemigos = new List<Enemys>();
     public GameObject metaObject;
+    
+    public bool CambioScena = false;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -34,6 +33,16 @@ public class meta : MonoBehaviour
             {
                 listEnemigos.Add(enemigo); // Agrega el enemigo a la lista si tiene el tag "Enemy"
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+
+        if (other.CompareTag("Player"))
+        {
+            CambioScena = true;
         }
     }
 

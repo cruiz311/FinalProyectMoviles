@@ -1542,6 +1542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6231191089363355341}
+  - component: {fileID: -8351830710157046481}
   m_Layer: 0
   m_Name: Yeti
   m_TagString: Enemy
@@ -1566,6 +1567,27 @@ Transform:
   - {fileID: 4484762131506150831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &-8351830710157046481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6715557419795438711}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1697688, y: 2.9640868, z: 1.3920245}
+  m_Center: {x: -0.072767735, y: 1.5482885, z: 0.19601226}
 --- !u!1 &7037439576878053556
 GameObject:
   m_ObjectHideFlags: 0

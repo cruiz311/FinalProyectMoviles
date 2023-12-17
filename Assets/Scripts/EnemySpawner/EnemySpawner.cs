@@ -22,8 +22,15 @@ public class EnemySpawner : MonoBehaviour
             // Verificar si el punto de spawn está asignado y si el enemigo a spawnear está definido
             if (spawnPoint != null && enemyToSpawn != null)
             {
-                // Instanciar un enemigo en el punto de spawn
-                GameObject newEnemy = enemyToSpawn.InstantiateEnemy(spawnPoint.position, spawnPoint.rotation);
+                // Definir posiciones aleatorias dentro del rango especificado
+                float randomX = Random.Range(-5.5f, 5.5f);
+                float randomZ = Random.Range(-30f, -13.5f);
+
+                // Crear la posición de spawn
+                Vector3 spawnPosition = new Vector3(randomX, spawnPoint.position.y, randomZ);
+
+                // Instanciar un enemigo en el punto de spawn con la nueva posición
+                GameObject newEnemy = enemyToSpawn.InstantiateEnemy(spawnPosition, spawnPoint.rotation);
 
                 // Opcional: Hacer más con el nuevo enemigo generado
                 // Por ejemplo: newEnemy.GetComponent<EnemyMovement>().SetDestination(someDestination);

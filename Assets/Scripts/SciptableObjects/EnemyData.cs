@@ -3,12 +3,12 @@ using UnityEngine;
 public enum EnemyType
 {
     Terrestre,
-    aereo
+    aereo,
 }
 [CreateAssetMenu(fileName = "NewEnemyData", menuName = "Enemy Data", order = 1)]
 public class EnemyData : ScriptableObject
 {
-    [Header ("Datos Generales")]
+    [Header("Datos Generales")]
     public int vida;
     public int maxVida;
     public int damage;
@@ -35,13 +35,13 @@ public class EnemyData : ScriptableObject
             newEnemy.AddComponent<EnemyFollowAtPlayer>();
             EnemyFollowAtPlayer a = newEnemy.GetComponent<EnemyFollowAtPlayer>();
             AsignarDatosTerrestre(a);
-        }  
+        }
         else
         {
             newEnemy.AddComponent<EnemyNotFollowAtPlayer>();
             EnemyNotFollowAtPlayer a = newEnemy.GetComponent<EnemyNotFollowAtPlayer>();
             AsignarDatosAereo(a);
-        }   
+        }
         return newEnemy;
     }
 
@@ -60,5 +60,13 @@ public class EnemyData : ScriptableObject
         enemyData.maxVida = maxVida;
         enemyData.damage = damage;
         enemyData.velocidad = velocidad;
+    }
+
+    public void a(EnemyNotFollowAtPlayer asdasd)
+    {
+        if(asdasd != null)
+        {
+
+        }
     }
 }

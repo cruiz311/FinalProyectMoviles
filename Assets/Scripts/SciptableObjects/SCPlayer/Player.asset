@@ -15,4 +15,4 @@ MonoBehaviour:
   vida: 0
   maxVida: 100
   damage: 10
-  velocidad_Ataque: 0.1
+  velocidad_Ataque: 0.02

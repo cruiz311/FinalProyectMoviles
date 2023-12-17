@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017cc3cff77eae14b988f5fcccfe005e, type: 3}
+  m_Name: TerrenoPlaya
+  m_EditorClassIdentifier: 
+  terreno: {fileID: 8795292829342018433, guid: ba3721399a2c5184daed842bd71fb843, type: 3}
+  enemySpawnerPrefab: {fileID: 8539335513593226573, guid: 3701fa44dfe295f4b8594376dab882cc, type: 3}
