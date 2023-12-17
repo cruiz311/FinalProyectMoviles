@@ -10,6 +10,7 @@ TagManager:
   - pool
   - meta
   - sceneManager
+  - PantallaNegra
   layers:
   - Default
   - TransparentFX

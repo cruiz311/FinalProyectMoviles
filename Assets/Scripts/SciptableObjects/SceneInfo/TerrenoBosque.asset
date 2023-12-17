@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017cc3cff77eae14b988f5fcccfe005e, type: 3}
   m_Name: TerrenoBosque
   m_EditorClassIdentifier: 
-  terreno: {fileID: 1774559974969076259, guid: e07d1aadd9ffc5f4cb06401d3b9680d7, type: 3}
+  terreno: {fileID: 772495587993299165, guid: e07d1aadd9ffc5f4cb06401d3b9680d7, type: 3}
   enemySpawnerPrefab: {fileID: 8539335513593226573, guid: f3c81b87ad41b184bab03cf8b95065db, type: 3}

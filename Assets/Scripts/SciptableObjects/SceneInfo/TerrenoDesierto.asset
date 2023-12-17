@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017cc3cff77eae14b988f5fcccfe005e, type: 3}
   m_Name: TerrenoDesierto
   m_EditorClassIdentifier: 
-  terreno: {fileID: 855386362538115314, guid: e42cb8328f2896d4295382b523aceb03, type: 3}
+  terreno: {fileID: 3981216388625364713, guid: 9cb00bf6fa897da499b97a7acd0f0eb3, type: 3}
   enemySpawnerPrefab: {fileID: 8539335513593226573, guid: eda88956d2af51a4aa2647b2ad05e276, type: 3}

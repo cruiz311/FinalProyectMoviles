@@ -6,19 +6,29 @@ public class SceneInfo : ScriptableObject
     public GameObject terreno;
     public GameObject enemySpawnerPrefab;
 
+    private GameObject instantiatedTerreno;
+    private GameObject instantiatedSpawner;
+
     public void CreateSceneElements()
     {
-        // Asegúrate de que haya una referencia válida al terreno y al prefab del spawner
         if (terreno != null && enemySpawnerPrefab != null)
         {
-            // Instancia el terreno
-            GameObject newTerreno = Instantiate(terreno);
+            instantiatedTerreno = Instantiate(terreno);
+            instantiatedSpawner = Instantiate(enemySpawnerPrefab, instantiatedTerreno.transform);
+            instantiatedSpawner.transform.localPosition = Vector3.zero;
+        }
+    }
 
-            // Instancia el EnemySpawner y átalo al terreno instanciado
-            GameObject spawnerInstance = Instantiate(enemySpawnerPrefab, newTerreno.transform);
+    public void ClearSceneElements()
+    {
+        if (instantiatedSpawner != null)
+        {
+            Destroy(instantiatedSpawner);
+        }
 
-            // Configura la posición del spawner dentro del terreno si es necesario
-            spawnerInstance.transform.localPosition = Vector3.zero;
+        if (instantiatedTerreno != null)
+        {
+            Destroy(instantiatedTerreno);
         }
     }
 }
