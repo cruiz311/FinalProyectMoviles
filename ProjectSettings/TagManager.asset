@@ -9,6 +9,7 @@ TagManager:
   - muro
   - pool
   - meta
+  - sceneManager
   layers:
   - Default
   - TransparentFX

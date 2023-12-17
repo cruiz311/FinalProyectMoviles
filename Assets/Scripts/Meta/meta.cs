@@ -6,14 +6,27 @@ public class meta : MonoBehaviour
 {
     public List<Enemys> listEnemigos = new List<Enemys>();
     public GameObject metaObject;
-    
+    public SceneController sceneController;
+    public Transform respawn;
+    public GameObject player;
     public bool CambioScena = false;
+    public GameObject playerUbi;
     // Start is called before the first frame update
-    
+    private void Start()
+    {
+        
+        GameObject gameController = GameObject.FindGameObjectWithTag("sceneManager");
+        sceneController = gameController.GetComponent<SceneController>();
+        if (player != null)
+        {
+            respawn = player.transform;
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         UpdateEnemyList();
         if (listEnemigos.Count < 1)
         {
