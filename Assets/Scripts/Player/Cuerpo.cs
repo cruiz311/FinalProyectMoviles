@@ -17,12 +17,9 @@ public class Cuerpo : MonoBehaviour
     public void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-
         GameObject balasBool = GameObject.FindGameObjectWithTag("pool");
         jug = player.GetComponent<Player>();
         balasPool = balasBool.GetComponent<BalasPool>();
-
-
     }
     void Update()
     {

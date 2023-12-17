@@ -8,6 +8,7 @@ TagManager:
   - balas
   - muro
   - pool
+  - meta
   layers:
   - Default
   - TransparentFX

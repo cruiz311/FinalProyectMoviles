@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 229654877}
   - component: {fileID: 229654876}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BarraExp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,6 +564,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229654874}
   m_CullTransparentMesh: 1
+--- !u!1 &283640936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 283640938}
+  - component: {fileID: 283640937}
+  m_Layer: 0
+  m_Name: ManagerInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &283640937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283640936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29d2d707491dea46bab4e20bcf8a6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInfo: {fileID: 11400000, guid: 70b269f4ff0796f49be8edd01384e997, type: 2}
+  textNivel: {fileID: 177569147}
+  BarraExp: {fileID: 229654876}
+  textEnergia: {fileID: 1283385908}
+  BarraEnergia: {fileID: 944950149}
+  textMagia: {fileID: 810093975}
+--- !u!4 &283640938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283640936}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 626.42145, y: 691.3628, z: -4.3594747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435148306
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +894,7 @@ GameObject:
   - component: {fileID: 546898322}
   - component: {fileID: 546898321}
   m_Layer: 5
-  m_Name: monedas
+  m_Name: magia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -921,7 +971,7 @@ GameObject:
   - component: {fileID: 607494526}
   - component: {fileID: 607494525}
   m_Layer: 5
-  m_Name: Image
+  m_Name: NivelPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1135,7 +1185,7 @@ GameObject:
   - component: {fileID: 714517567}
   - component: {fileID: 714517566}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CantidadMagia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1682,7 +1732,7 @@ GameObject:
   - component: {fileID: 906092563}
   - component: {fileID: 906092562}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Jugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,7 +1803,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 906092563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 283640937}
+        m_TargetAssemblyTypeName: UI_ManagerINFO, Assembly-CSharp
+        m_MethodName: gastarEnergia
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &906092563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,7 +1866,7 @@ GameObject:
   - component: {fileID: 944950150}
   - component: {fileID: 944950149}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BarraEnergia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,7 +1943,7 @@ GameObject:
   - component: {fileID: 981262829}
   - component: {fileID: 981262828}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2509,3 +2571,4 @@ SceneRoots:
   - {fileID: 743422040}
   - {fileID: 204730184}
   - {fileID: 622972399}
+  - {fileID: 283640938}
