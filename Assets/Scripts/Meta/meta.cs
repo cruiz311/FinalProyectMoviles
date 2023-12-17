@@ -9,13 +9,13 @@ public class meta : MonoBehaviour
     public SceneController sceneController;
     public Transform respawn;
     public GameObject player;
+    public GameObject pantallaNegra;
     public bool CambioScena = false;
-    public GameObject playerUbi;
     // Start is called before the first frame update
     private void Start()
     {
-        
         GameObject gameController = GameObject.FindGameObjectWithTag("sceneManager");
+        pantallaNegra = GameObject.FindGameObjectWithTag("PantallaNegra");
         sceneController = gameController.GetComponent<SceneController>();
         if (player != null)
         {
@@ -36,6 +36,7 @@ public class meta : MonoBehaviour
     }
     void UpdateEnemyList()
     {
+        pantallaNegra.SetActive(false);
         listEnemigos.Clear(); // Limpiamos la lista actual para volver a llenarla
 
         Enemys[] enemigosEnEscena = FindObjectsOfType<Enemys>(); // Encuentra todos los objetos con el script Enemys
@@ -51,12 +52,16 @@ public class meta : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-
         if (other.CompareTag("Player"))
         {
             CambioScena = true;
+            sceneController.EliminarEscenario();
+            pantallaNegra.SetActive(true);
         }
+    }
+    public void RestablecerPosicion()
+    {
+        player.transform.position = respawn.position;
     }
 
 }
