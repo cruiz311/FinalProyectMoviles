@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea54036248a6e9e4c8f130fb50075db6, type: 3}
+  m_Name: Yeti
+  m_EditorClassIdentifier: 
+  vida: 0
+  maxVida: 100
+  damage: 20
+  velocidad: 2
+  distanciaDeAtaque: 2.3
+  enemyPrefab: {fileID: 6715557419795438711, guid: 4d3468d08d876df4eadffdf8f46e98d6, type: 3}
+  anim: {fileID: 9100000, guid: ae9688f6a08a8a649aa20b4d231e45a3, type: 2}
+  enemyType: 0
