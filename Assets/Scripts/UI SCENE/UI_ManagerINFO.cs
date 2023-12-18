@@ -19,6 +19,7 @@ public class UI_ManagerINFO : MonoBehaviour
     private void Awake()
     {
         playerInfo.Awake();
+
     }
     private void Update()
     {

@@ -5,15 +5,8 @@ using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
-    public Button loadSceneButton;
-
-    private void Start()
+    public void CargarScene(string nameScena)
     {
-        loadSceneButton.onClick.AddListener(LoadScene);
-    }
-
-    private void LoadScene()
-    {
-        Scene_Manager.Instance.LoadSceneAsync("Juego");
+        Scene_Manager.Instance.LoadSceneAsync(nameScena);
     }
 }

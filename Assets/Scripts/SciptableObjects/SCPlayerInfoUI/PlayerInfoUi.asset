@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerInfoUi
   m_EditorClassIdentifier: 
   nivel: 1
-  puntosExperiencia: 0
+  puntosExperiencia: 5000
   puntosMaximoExperiencia: 10
   energia: 20
   energiaMaxima: 20
-  PuntosMagia: 1000
+  PuntosMagia: 10000

@@ -31,11 +31,11 @@ public class Database_firebase : MonoBehaviour
     {
         //databaseReference.Child("Users").Child(userID).SetValueAsync(userID);
         Set_Nombre(player_Data.Nombre);
-        Set_Nivel(0);
+        Set_Nivel(1);
         Set_Puntos_experiencia(0);
-        Set_Puntos_maximo_experiencia(0);
-        Set_Energia(0);
-        Set_Energia_maxima(0);
+        Set_Puntos_maximo_experiencia(10);
+        Set_Energia(20);
+        Set_Energia_maxima(20);
         Set_Puntos_magia(0);
     }
     public void Get_player_data()

@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 2435588305300907278}
   - component: {fileID: 9114725301491716768}
   - component: {fileID: 7688256095687246434}
+  - component: {fileID: 8341473981547924568}
   m_Layer: 0
   m_Name: Island_SquareShape_Mobile
   m_TagString: muro
@@ -1110,6 +1111,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8341473981547924568
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082304587552171759}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 34529e5400878a048b34e4d9876c4660, type: 3}
 --- !u!1 &2214205080475979396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,8 +1598,8 @@ Transform:
   m_GameObject: {fileID: 2476148228993317584}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0040741637, y: 0.9999917, z: -0, w: 0}
-  m_LocalPosition: {x: -2.56, y: -0.4, z: -9.40501}
-  m_LocalScale: {x: 1.822, y: 1.822, z: 1.822}
+  m_LocalPosition: {x: 4.9, y: -8.9, z: -9.40501}
+  m_LocalScale: {x: 10, y: 1.822, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 397922306777217547}
@@ -1588,7 +1611,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2476148228993317584}
-  m_Mesh: {fileID: 4300000, guid: 661464e19c087564badb2bf5230c842c, type: 3}
+  m_Mesh: {fileID: 4300000, guid: f5baf401218f50f45a7f0fc2a17b6215, type: 3}
 --- !u!23 &443035234792991587
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937fbd489427ecb498bc5421a9e849c4, type: 3}
   m_Name: Player_data
   m_EditorClassIdentifier: 
-  Id_firebase: FPyIVxxs6ENY7cwVXLUwW4eitZg1
-  Nivel: 0
-  Nombre: juan
+  Id_firebase: G2gW7ijMIBdaQ2CHRq50dt368yM2
+  Nivel: 1
+  Nombre: aprobando
+  Puntos_experiencia: 10
+  Puntos_maximo_experiencia: 10
+  Energia: 20
+  Energia_maxima: 20
+  Puntos_magia: 0

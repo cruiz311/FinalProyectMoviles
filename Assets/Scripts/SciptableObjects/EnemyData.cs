@@ -61,12 +61,4 @@ public class EnemyData : ScriptableObject
         enemyData.damage = damage;
         enemyData.velocidad = velocidad;
     }
-
-    public void a(EnemyNotFollowAtPlayer asdasd)
-    {
-        if(asdasd != null)
-        {
-
-        }
-    }
 }

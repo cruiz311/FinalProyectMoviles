@@ -1044,7 +1044,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 622972399}
-  - component: {fileID: 622972398}
   - component: {fileID: 622972400}
   m_Layer: 0
   m_Name: Manager
@@ -1053,18 +1052,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &622972398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622972397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f0906779201d364ba940c27a0f31a1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &622972399
 Transform:
   m_ObjectHideFlags: 0
@@ -1092,7 +1079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65deb31b2ee0ad1428d524fd838d8a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadSceneButton: {fileID: 906092562}
 --- !u!1 &700126492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,16 +1816,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 622972397}
-        m_TargetAssemblyTypeName: UI_ManagerINFO, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 622972400}
+        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
+        m_MethodName: CargarScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Juego
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &906092563
