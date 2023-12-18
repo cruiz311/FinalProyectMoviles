@@ -473,9 +473,6 @@ MonoBehaviour:
   listEnemigos: []
   metaObject: {fileID: 2225897803301842615}
   sceneController: {fileID: 0}
-  respawn: {fileID: 4004073602507289294}
-  player: {fileID: 0}
-  pantallaNegra: {fileID: 0}
   CambioScena: 0
 --- !u!65 &7592337898044573604
 BoxCollider:
@@ -2649,6 +2646,7 @@ GameObject:
   - component: {fileID: 4775887615733866608}
   - component: {fileID: 1635344567809337359}
   - component: {fileID: 2990322827751810363}
+  - component: {fileID: 2664001960973924555}
   m_Layer: 0
   m_Name: PyramidPintada
   m_TagString: Untagged
@@ -2721,6 +2719,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2664001960973924555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225897803301842615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.9320335, y: 2.6098928, z: 3.932033}
+  m_Center: {x: 0, y: 0.30494636, z: 0.0000015497208}
 --- !u!1 &2330814517061952762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,7 +3767,7 @@ Transform:
   m_GameObject: {fileID: 3981216388625364713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.3, y: 0.36, z: -23.3}
+  m_LocalPosition: {x: 4.3, y: 0.36, z: -26.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
