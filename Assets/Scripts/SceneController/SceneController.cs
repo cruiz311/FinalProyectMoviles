@@ -18,14 +18,6 @@ public class SceneController : MonoBehaviour
         AsignarPrimeraEscena().CreateSceneElements();
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            EliminarEscenario();
-        }
-    }
-
     public void CrearEscenario()
     {
         

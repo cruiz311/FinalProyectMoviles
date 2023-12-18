@@ -7,26 +7,19 @@ public class meta : MonoBehaviour
     public List<Enemys> listEnemigos = new List<Enemys>();
     public GameObject metaObject;
     public SceneController sceneController;
-    public Transform respawn;
-    public GameObject player;
-    public GameObject pantallaNegra;
     public bool CambioScena = false;
     // Start is called before the first frame update
     private void Start()
     {
         GameObject gameController = GameObject.FindGameObjectWithTag("sceneManager");
-        pantallaNegra = GameObject.FindGameObjectWithTag("PantallaNegra");
+
         sceneController = gameController.GetComponent<SceneController>();
-        if (player != null)
-        {
-            respawn = player.transform;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        
         UpdateEnemyList();
         if (listEnemigos.Count < 1)
         {
@@ -36,11 +29,7 @@ public class meta : MonoBehaviour
     }
     void UpdateEnemyList()
     {
-        if(pantallaNegra!= null)
-        {
-            pantallaNegra.SetActive(false);
-        }
-        
+
         listEnemigos.Clear(); // Limpiamos la lista actual para volver a llenarla
 
         Enemys[] enemigosEnEscena = FindObjectsOfType<Enemys>(); // Encuentra todos los objetos con el script Enemys
@@ -60,12 +49,6 @@ public class meta : MonoBehaviour
         {
             CambioScena = true;
             sceneController.EliminarEscenario();
-            pantallaNegra.SetActive(true);
         }
     }
-    public void RestablecerPosicion()
-    {
-        player.transform.position = respawn.position;
-    }
-
 }
