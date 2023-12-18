@@ -14,11 +14,13 @@ public class Cuerpo : MonoBehaviour
     public GameObject bala;
     public bool isShooting = false;
 
+    public Animator anim;
     public void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("PlayerPrincipal");
         GameObject balasBool = GameObject.FindGameObjectWithTag("pool");
         jug = player.GetComponent<Player>();
+        anim = GetComponent<Animator>();
         balasPool = balasBool.GetComponent<BalasPool>();
     }
     void Update()
@@ -26,12 +28,17 @@ public class Cuerpo : MonoBehaviour
         target = jug.target;
         if (target != null)
         {
+            anim.SetBool("Attack", true);
             LookThis(target.transform);
             if (!isShooting) // Verificar si no se está disparando actualmente
             {
                 StartCoroutine(Shot());
             }
-        }  
+        }
+        else
+        {
+            anim.SetBool("Attack", false);
+        }
     }
     public void LookThis(Transform posicion)
     {
@@ -71,7 +78,14 @@ public class Cuerpo : MonoBehaviour
 
             yield return new WaitForSeconds(jug.velocidadAtaque);
         }
-
         isShooting = false;
+    }
+
+    public void verificarVida()
+    {
+        if(jug.vida < 1)
+        {
+            anim.SetBool("Die", true);
+        }
     }
 }

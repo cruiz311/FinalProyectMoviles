@@ -12,7 +12,7 @@ public class Balas : MonoBehaviour
     void Start()
     {
         // Buscar al jugador en el Hierachy
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("PlayerPrincipal");
         balasBool = GameObject.FindGameObjectWithTag("pool");
         balasPool = balasBool.GetComponent<BalasPool>();
     }

@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     [Header("Datos Generales")]
     public PlayerData playerData;
-    protected int vida;
-    protected int maxVida;
+    public int vida;
+    public int maxVida;
     public int damage;
     public float velocidadAtaque;
     [Header("Enemigos")]

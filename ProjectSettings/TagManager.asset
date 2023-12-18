@@ -11,6 +11,7 @@ TagManager:
   - meta
   - sceneManager
   - PantallaNegra
+  - PlayerPrincipal
   layers:
   - Default
   - TransparentFX
