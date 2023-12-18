@@ -20,7 +20,10 @@ public class SceneController : MonoBehaviour
 
     public void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            CrearEscenario();
+        }
     }
 
     public void CrearEscenario()
