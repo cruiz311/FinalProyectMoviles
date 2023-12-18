@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -553,6 +553,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasEndGame
       objectReference: {fileID: 0}
+    - target: {fileID: 2353193309423935492, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353193309423935492, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -438.2039
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353193309423935492, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353193309423935492, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353193309423935492, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -219.10204
+      objectReference: {fileID: 0}
     - target: {fileID: 4565282677441487896, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -632,6 +652,14 @@ PrefabInstance:
     - target: {fileID: 4565282677441487896, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318590739451446231, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_fontSize
+      value: 80.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5318590739451446231, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7782810446514003970, guid: 8838c516275f2a346a969851fcecf75d, type: 3}
       propertyPath: m_LocalScale.x

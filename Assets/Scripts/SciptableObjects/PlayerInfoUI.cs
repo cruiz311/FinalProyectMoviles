@@ -26,12 +26,12 @@ public class PlayerInfoUi : ScriptableObject
     
     public void ActualizarNivel()
     {
-        if(puntosExperiencia >= puntosMaximoExperiencia)
+        while(puntosExperiencia >= puntosMaximoExperiencia)
         {
             nivel++;
-            puntosExperiencia = 0;
             puntosMaximoExperiencia = (int)(puntosMaximoExperiencia * 1.5f);
         }
+        puntosExperiencia = puntosMaximoExperiencia - puntosExperiencia;
     }
     public void ObtenerNivel(int _nivel)
     {

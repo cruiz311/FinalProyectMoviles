@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Enemys : MonoBehaviour
 {
+    public PuntuacionesSO puntuacionesSO;
     public int vida;
     public int maxVida;
     public int damage;
@@ -35,6 +36,7 @@ public class Enemys : MonoBehaviour
 
     private IEnumerator Destruir(float retardo)
     {
+        puntuacionesSO.enemigosMatados++; 
         yield return new WaitForSeconds(retardo); 
         Destroy(gameObject);
     }
