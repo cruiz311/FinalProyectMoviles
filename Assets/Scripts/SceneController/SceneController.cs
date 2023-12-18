@@ -7,7 +7,7 @@ public class SceneController : MonoBehaviour
     public SceneInfo[] sceneInfo;
     public List<SceneInfo> listaScenas;
     public SceneInfo sceneActual;
-
+    public SceneInfo sceneSiguiente;
 
     private void Start()
     {
@@ -38,6 +38,7 @@ public class SceneController : MonoBehaviour
         if (listaScenas.Count > 0)
         {
             sceneActual = listaScenas[0];
+            sceneSiguiente = listaScenas[1];
         }
         return sceneActual;
     }
@@ -48,7 +49,7 @@ public class SceneController : MonoBehaviour
         {
             AsignarPrimeraEscena().ClearSceneElements();
             listaScenas.RemoveAt(0);
-
+            AsignarPrimeraEscena().CreateSceneElements();
             Debug.Log(listaScenas.Count);
             if (listaScenas.Count < 10) // Verificar si la lista tiene menos de 10 escenas
             {
@@ -59,6 +60,7 @@ public class SceneController : MonoBehaviour
             if (listaScenas.Count > 0)
             {
                 sceneActual = listaScenas[0];
+                sceneSiguiente = listaScenas[1];
             }
             else
             {

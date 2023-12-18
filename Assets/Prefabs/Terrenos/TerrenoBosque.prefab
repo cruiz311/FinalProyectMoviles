@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4960381146387573471}
   m_Layer: 0
   m_Name: Branch_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4223321031636825519}
   m_Layer: 0
   m_Name: Flowers_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 5519550680706752692}
   m_Layer: 0
   m_Name: Tree_03
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1872,7 +1872,7 @@ GameObject:
   - component: {fileID: 1554411103208238113}
   m_Layer: 0
   m_Name: Rock_05 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2269,7 +2269,7 @@ GameObject:
   - component: {fileID: 3210329155433581292}
   m_Layer: 0
   m_Name: Bush_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 1091432517598722393}
   m_Layer: 0
   m_Name: Tree_05
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2710,7 +2710,7 @@ GameObject:
   - component: {fileID: 1313237664061427929}
   m_Layer: 0
   m_Name: Bush_01 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3083,7 +3083,7 @@ GameObject:
   - component: {fileID: 6728369126832258141}
   m_Layer: 0
   m_Name: Tree_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3654,7 +3654,7 @@ GameObject:
   - component: {fileID: 1558299669859739284}
   m_Layer: 0
   m_Name: Flowers_01 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4216,7 +4216,7 @@ GameObject:
   - component: {fileID: 4588456263235804564}
   m_Layer: 0
   m_Name: Bush_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4715,7 +4715,7 @@ GameObject:
   - component: {fileID: 3648759349656803854}
   m_Layer: 0
   m_Name: Flowers_02 (3)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5026,7 +5026,7 @@ GameObject:
   - component: {fileID: 2671777324867202774}
   m_Layer: 0
   m_Name: Grass_02 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5083,7 +5083,7 @@ GameObject:
   - component: {fileID: 3887190603942447138}
   m_Layer: 0
   m_Name: Stump_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6246,7 +6246,7 @@ GameObject:
   - component: {fileID: 3115761685932239946}
   m_Layer: 0
   m_Name: Rock_04 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6540,7 +6540,7 @@ GameObject:
   - component: {fileID: 8897810640190798321}
   m_Layer: 0
   m_Name: Rock_04 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6751,7 +6751,7 @@ GameObject:
   - component: {fileID: 8931402684759949503}
   m_Layer: 0
   m_Name: Rock_04 (3)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7533,7 +7533,7 @@ GameObject:
   - component: {fileID: 8260364612618577022}
   m_Layer: 0
   m_Name: Flowers_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7800,7 +7800,7 @@ GameObject:
   - component: {fileID: 3811173789053001205}
   m_Layer: 0
   m_Name: Tree_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7940,7 +7940,7 @@ GameObject:
   - component: {fileID: 3502842998644315660}
   m_Layer: 0
   m_Name: Bush_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8141,7 +8141,7 @@ GameObject:
   - component: {fileID: 7221026388056216775}
   m_Layer: 0
   m_Name: Rock_04
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8457,7 +8457,7 @@ GameObject:
   - component: {fileID: 518517445183319076}
   m_Layer: 0
   m_Name: Flowers_01 (3)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8514,7 +8514,7 @@ GameObject:
   - component: {fileID: 5207509833523487050}
   m_Layer: 0
   m_Name: Mushroom_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8571,7 +8571,7 @@ GameObject:
   - component: {fileID: 1216881921944494202}
   m_Layer: 0
   m_Name: Tree_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8628,7 +8628,7 @@ GameObject:
   - component: {fileID: 2642934601313951704}
   m_Layer: 0
   m_Name: Muro (3)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8690,7 +8690,7 @@ GameObject:
   - component: {fileID: 7840576829391367261}
   m_Layer: 0
   m_Name: Rock_04 (4)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8794,7 +8794,7 @@ GameObject:
   - component: {fileID: 4070473176292834014}
   m_Layer: 0
   m_Name: Tree_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8890,7 +8890,7 @@ GameObject:
   - component: {fileID: 2890453422041308809}
   m_Layer: 0
   m_Name: Tree_03
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9138,7 +9138,7 @@ GameObject:
   - component: {fileID: 8795006910181398470}
   m_Layer: 0
   m_Name: Tree_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9278,7 +9278,7 @@ GameObject:
   - component: {fileID: 7647907504271741686}
   m_Layer: 0
   m_Name: Muro (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9446,7 +9446,7 @@ GameObject:
   - component: {fileID: 7688152464154511832}
   m_Layer: 0
   m_Name: Branch_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9550,7 +9550,7 @@ GameObject:
   - component: {fileID: 8910987396507013240}
   m_Layer: 0
   m_Name: Flowers_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9713,7 +9713,7 @@ GameObject:
   - component: {fileID: 2501791231733144589}
   m_Layer: 0
   m_Name: Bush_03 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9877,7 +9877,7 @@ GameObject:
   - component: {fileID: 979199986486014699}
   m_Layer: 0
   m_Name: Rock_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10677,7 +10677,7 @@ GameObject:
   - component: {fileID: 1782555887418612132}
   m_Layer: 0
   m_Name: Mushroom_01 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11005,7 +11005,7 @@ GameObject:
   - component: {fileID: 770620640068571275}
   m_Layer: 0
   m_Name: Flowers_02 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11167,7 +11167,7 @@ GameObject:
   - component: {fileID: 7504593709839679754}
   m_Layer: 0
   m_Name: Mushroom_02 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11364,7 +11364,7 @@ GameObject:
   - component: {fileID: 7108362728632731920}
   m_Layer: 0
   m_Name: Rock_04 (5)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11468,7 +11468,7 @@ GameObject:
   - component: {fileID: 8330630975419320251}
   m_Layer: 0
   m_Name: Muro (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11528,7 +11528,7 @@ GameObject:
   - component: {fileID: 7304985043919050429}
   m_Layer: 0
   m_Name: Tree_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11742,7 +11742,7 @@ GameObject:
   - component: {fileID: 6571479190811668447}
   m_Layer: 0
   m_Name: Tree_05
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11882,7 +11882,7 @@ GameObject:
   - component: {fileID: 56752358806492440}
   m_Layer: 0
   m_Name: Bush_03
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12044,7 +12044,7 @@ GameObject:
   - component: {fileID: 1336568904461643148}
   m_Layer: 0
   m_Name: Bush_02 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12101,7 +12101,7 @@ GameObject:
   - component: {fileID: 6056830956548827513}
   m_Layer: 0
   m_Name: Grass_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12429,7 +12429,7 @@ GameObject:
   - component: {fileID: 5516195239473504740}
   m_Layer: 0
   m_Name: Flowers_02 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13451,7 +13451,7 @@ GameObject:
   - component: {fileID: 4948089333800767875}
   m_Layer: 0
   m_Name: Mushroom_02 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13508,7 +13508,7 @@ GameObject:
   - component: {fileID: 6242419705476474164}
   m_Layer: 0
   m_Name: Mushroom_01 (3)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13763,7 +13763,7 @@ GameObject:
   - component: {fileID: 8449594150466101071}
   m_Layer: 0
   m_Name: Muro
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13926,7 +13926,7 @@ GameObject:
   - component: {fileID: 8439505596114606457}
   m_Layer: 0
   m_Name: Mushroom_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14914,7 +14914,7 @@ GameObject:
   - component: {fileID: 8254570831316702637}
   m_Layer: 0
   m_Name: Tree_04
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14971,7 +14971,7 @@ GameObject:
   - component: {fileID: 584186078820310945}
   m_Layer: 0
   m_Name: Tree_04
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15300,7 +15300,7 @@ GameObject:
   - component: {fileID: 3438755498401456241}
   m_Layer: 0
   m_Name: Mushroom_02
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15359,7 +15359,7 @@ GameObject:
   - component: {fileID: 2643905594629665345}
   m_Layer: 0
   m_Name: Rock_05
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
