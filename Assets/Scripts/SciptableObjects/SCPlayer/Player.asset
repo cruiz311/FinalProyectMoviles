@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4780ced952d287646a8a62aa6d6c84e9, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  vida: 0
+  vida: 20
   maxVida: 100
   damage: 10
   velocidad_Ataque: 0.02

@@ -11583,6 +11583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46237556317823701}
   - component: {fileID: 971407272309684146}
+  - component: {fileID: 3031668937597336413}
   m_Layer: 0
   m_Name: WinOrLostManager
   m_TagString: meta
@@ -11625,6 +11626,27 @@ MonoBehaviour:
   player: {fileID: 0}
   pantallaNegra: {fileID: 0}
   CambioScena: 0
+--- !u!65 &3031668937597336413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6441676804200489009}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6451890893953154574
 GameObject:
   m_ObjectHideFlags: 0

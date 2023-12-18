@@ -8,7 +8,6 @@ public class SceneInfo : ScriptableObject
 
     private GameObject instantiatedTerreno;
     private GameObject instantiatedSpawner;
-
     public void CreateSceneElements()
     {
         if (terreno != null && enemySpawnerPrefab != null)
