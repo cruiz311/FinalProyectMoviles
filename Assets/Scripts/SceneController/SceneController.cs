@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 10; i++)
         {
             CrearEscenario();
         }
@@ -22,7 +22,7 @@ public class SceneController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
-            CrearEscenario();
+            EliminarEscenario();
         }
     }
 
@@ -48,7 +48,14 @@ public class SceneController : MonoBehaviour
         {
             AsignarPrimeraEscena().ClearSceneElements();
             listaScenas.RemoveAt(0);
-            // También podrías volver a asignar la escena actual si es necesario
+
+            Debug.Log(listaScenas.Count);
+            if (listaScenas.Count < 10) // Verificar si la lista tiene menos de 10 escenas
+            {
+                CrearEscenario(); // Agregar una nueva escena si la lista tiene menos de 10 elementos
+            }
+
+            // Actualizar la escena actual si es necesario
             if (listaScenas.Count > 0)
             {
                 sceneActual = listaScenas[0];
@@ -59,5 +66,6 @@ public class SceneController : MonoBehaviour
             }
         }
     }
+
 
 }
