@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
+    public PuntuacionesSO puntuacionesSO;
+
     public SceneInfo[] sceneInfo;
     public List<SceneInfo> listaScenas;
     public SceneInfo sceneActual;
@@ -37,6 +39,7 @@ public class SceneController : MonoBehaviour
 
     public void EliminarEscenario()
     {
+        puntuacionesSO.mapasSuperados++;
         if (listaScenas.Count > 0)
         {
             AsignarPrimeraEscena().ClearSceneElements();

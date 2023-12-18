@@ -22,6 +22,7 @@ public class EnemyData : ScriptableObject
     [Header("Tipo de enemigo")]
     public EnemyType enemyType;
 
+
     // Otras propiedades que puedas necesitar para tu enemigo
 
     public GameObject InstantiateEnemy(Vector3 position, Quaternion rotation)
@@ -42,6 +43,7 @@ public class EnemyData : ScriptableObject
             EnemyNotFollowAtPlayer a = newEnemy.GetComponent<EnemyNotFollowAtPlayer>();
             AsignarDatosAereo(a);
         }
+        
         return newEnemy;
     }
 

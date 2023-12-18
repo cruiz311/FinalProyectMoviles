@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     [Header("Enemigos")]
     public Enemys target;
     public List<Enemys> listEnemigos = new List<Enemys>();
-    
 
     private void Start()
     {
