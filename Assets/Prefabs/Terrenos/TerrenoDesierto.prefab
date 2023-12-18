@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 5669037922509162028}
   m_Layer: 0
   m_Name: Flat_Rock_01 (5)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 5392786534415282679}
   m_Layer: 0
   m_Name: Mixed_Rock_01 (5)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 5023021556678517105}
   m_Layer: 0
   m_Name: Flat_Rock_01 (9)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 1030994381101570095}
   m_Layer: 0
   m_Name: Flat_Rock_01 (10)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,9 +1593,9 @@ Transform:
   m_GameObject: {fileID: 1294862179291127026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.988418, y: -0.36, z: -1.1959791}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -15.99, y: -0.36, z: -3.29}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9154022714381339906}
   - {fileID: 2371214308449589448}
@@ -3893,7 +3893,7 @@ GameObject:
   - component: {fileID: 5341273046639884398}
   m_Layer: 0
   m_Name: Mixed_Rock_01 (1)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4105,7 +4105,7 @@ GameObject:
   - component: {fileID: 2023624423442901612}
   m_Layer: 0
   m_Name: Flat_Rock_01 (6)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4423,7 +4423,7 @@ GameObject:
   - component: {fileID: 8821952160589450927}
   m_Layer: 0
   m_Name: Mixed_Rock_01 (6)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6031,7 +6031,7 @@ GameObject:
   - component: {fileID: 4612822790437525821}
   m_Layer: 0
   m_Name: Mixed_Rock_01
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6432,7 +6432,7 @@ GameObject:
   - component: {fileID: 2194577629615223758}
   m_Layer: 0
   m_Name: Mixed_Rock_01 (4)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6538,7 +6538,7 @@ GameObject:
   - component: {fileID: 4401144202012103110}
   m_Layer: 0
   m_Name: Mixed_Rock_01 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6856,7 +6856,7 @@ GameObject:
   - component: {fileID: 1789982989118869179}
   m_Layer: 0
   m_Name: Flat_Rock_01 (2)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6962,7 +6962,7 @@ GameObject:
   - component: {fileID: 2916823138811074455}
   m_Layer: 0
   m_Name: Flat_Rock_01 (8)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7418,7 +7418,7 @@ GameObject:
   - component: {fileID: 5980494872146525796}
   m_Layer: 0
   m_Name: Flat_Rock_01 (4)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7736,7 +7736,7 @@ GameObject:
   - component: {fileID: 6877637265899356344}
   m_Layer: 0
   m_Name: Flat_Rock_01 (7)
-  m_TagString: Untagged
+  m_TagString: muro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

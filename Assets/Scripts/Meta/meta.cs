@@ -36,7 +36,11 @@ public class meta : MonoBehaviour
     }
     void UpdateEnemyList()
     {
-        pantallaNegra.SetActive(false);
+        if(pantallaNegra!= null)
+        {
+            pantallaNegra.SetActive(false);
+        }
+        
         listEnemigos.Clear(); // Limpiamos la lista actual para volver a llenarla
 
         Enemys[] enemigosEnEscena = FindObjectsOfType<Enemys>(); // Encuentra todos los objetos con el script Enemys
