@@ -5,4 +5,10 @@ public class PuntuacionesSO : ScriptableObject
 {
     public int enemigosMatados;
     public int mapasSuperados;
+
+    public void Awake()
+    {
+        enemigosMatados = 0;
+        mapasSuperados = 0;
+    }
 }

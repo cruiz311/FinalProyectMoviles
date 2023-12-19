@@ -1381,7 +1381,7 @@ Transform:
   m_GameObject: {fileID: 772495587993299165}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.7, y: -0.0000019073486, z: -28.6}
+  m_LocalPosition: {x: -0.7, y: -0.0000019073486, z: -30.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11619,12 +11619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ff4fe96cefacf4bb5678188d3a96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntuacionesSO: {fileID: 0}
+  puntuacion: {fileID: 0}
   listEnemigos: []
   metaObject: {fileID: 6061642268387072602}
   sceneController: {fileID: 0}
-  respawn: {fileID: 8250758116753992118}
-  player: {fileID: 0}
-  pantallaNegra: {fileID: 0}
   CambioScena: 0
 --- !u!65 &3031668937597336413
 BoxCollider:

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d627040e691efa4db81e248f679a798, type: 3}
   m_Name: PuntuacionesSO
   m_EditorClassIdentifier: 
-  enemigosMatados: 0
+  enemigosMatados: 5
   mapasSuperados: 0

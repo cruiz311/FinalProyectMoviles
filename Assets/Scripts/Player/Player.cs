@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public Enemys target;
     public List<Enemys> listEnemigos = new List<Enemys>();
 
+    public Scene_Manager scenita;
+
     private void Start()
     {
         maxVida = playerData.maxVida;
@@ -24,6 +26,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         UpdateEnemyList();
+        UpdateLife();
     }
 
     void UpdateEnemyList()
@@ -54,6 +57,14 @@ public class Player : MonoBehaviour
         else
         {
             target = null; // No hay enemigos en la lista, el objetivo es nulo
+        }
+    }
+
+    void UpdateLife()
+    {
+        if (vida <= 0)
+        {
+            scenita.LoadSceneAsync("Puntuaciones");
         }
     }
 }

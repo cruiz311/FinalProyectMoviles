@@ -12,6 +12,7 @@ TagManager:
   - pool
   - balas
   - Enemy
+  - puntuacion
   layers:
   - Default
   - TransparentFX

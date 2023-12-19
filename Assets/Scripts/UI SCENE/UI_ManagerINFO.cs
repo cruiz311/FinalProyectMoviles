@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UI_ManagerINFO : MonoBehaviour
 {
-    public PlayerInfoUi playerInfo;
+    public PlayerInfoUi playerInfoUi;
     [Header("nivel")]
     public TMP_Text textNivel;
     public Image BarraExp;
@@ -18,30 +18,29 @@ public class UI_ManagerINFO : MonoBehaviour
 
     private void Awake()
     {
-        playerInfo.Awake();
+        playerInfoUi.Awake();
 
     }
     private void Update()
     {
         ActualizarUI();
-        playerInfo.ActualizarNivel();
     }
 
     public void ActualizarUI()
     {
-        textNivel.text = playerInfo.nivel.ToString();
-        textEnergia.text = playerInfo.energia.ToString() + "/" + playerInfo.energiaMaxima.ToString();
-        textMagia.text = playerInfo.PuntosMagia.ToString();
+        textNivel.text = playerInfoUi.nivel.ToString();
+        textEnergia.text = playerInfoUi.energia.ToString() + "/" + playerInfoUi.energiaMaxima.ToString();
+        textMagia.text = playerInfoUi.PuntosMagia.ToString();
 
-        float fillAmountBarraExp = (float)playerInfo.puntosExperiencia / (float)playerInfo.puntosMaximoExperiencia;
+        float fillAmountBarraExp = (float)playerInfoUi.puntosExperiencia / (float)playerInfoUi.puntosMaximoExperiencia;
         BarraExp.fillAmount = fillAmountBarraExp;
 
-        float fillAmountBarraEnergia = (float)playerInfo.energia / (float)playerInfo.energiaMaxima;
+        float fillAmountBarraEnergia = (float)playerInfoUi.energia / (float)playerInfoUi.energiaMaxima;
         BarraEnergia.fillAmount = fillAmountBarraEnergia;
     }
 
     public void gastarEnergia()
     {
-        playerInfo.energia = +50;
+        playerInfoUi.energia = +50;
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class meta : MonoBehaviour
 {
+    public PuntuacionesSO puntuacionesSO;
+    public GameObject puntuacion;
     public List<Enemys> listEnemigos = new List<Enemys>();
     public GameObject metaObject;
     public SceneController sceneController;
@@ -12,7 +14,8 @@ public class meta : MonoBehaviour
     private void Start()
     {
         GameObject gameController = GameObject.FindGameObjectWithTag("sceneManager");
-
+        puntuacion = GameObject.FindGameObjectWithTag("puntuacion");
+        puntuacionesSO = puntuacion.GetComponent<puntuacionController>().puntuacionesSO;
         sceneController = gameController.GetComponent<SceneController>();
     }
 
@@ -49,6 +52,7 @@ public class meta : MonoBehaviour
         {
             CambioScena = true;
             sceneController.EliminarEscenario();
+            puntuacionesSO.mapasSuperados++;
         }
     }
 }

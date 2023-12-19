@@ -16,7 +16,7 @@ MonoBehaviour:
   maxVida: 100
   damage: 20
   velocidad: 2
-  distanciaDeAtaque: 2.3
+  distanciaDeAtaque: 1.5
   enemyPrefab: {fileID: 6018958865006567819, guid: 6fc135dc2064ee946962ecb7dd53cfcf, type: 3}
   anim: {fileID: 9100000, guid: ae9688f6a08a8a649aa20b4d231e45a3, type: 2}
   enemyType: 0
